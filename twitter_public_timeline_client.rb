@@ -7,4 +7,5 @@
 # original tweet golfed to 140 chars
 #
 # this version golfed to 113 characters
+# http://twitter.com/Abica/status/4599466674
 loop{puts `curl -L bit.ly/UsepO`.scan(%r{<(screen_name|text)>(.*?)</\1>}).reverse.map{|v,b|v[/text/]? b:"\n@"+b}}
